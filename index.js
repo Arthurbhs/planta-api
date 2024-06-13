@@ -1,5 +1,9 @@
 
+const express = require('express');
 const app = express();
+
+// Restante do seu código do Express aqui
+
 
 // Exemplo de dados de plantas
 const plants = [
