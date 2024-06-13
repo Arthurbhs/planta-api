@@ -1,9 +1,16 @@
 const express = require('express');
 const app = express();
 
+// Dados fictícios das flores
+const flowers = [
+  { name: 'Orquídea', origin: 'Tropical' },
+  { name: 'Girassol', origin: 'Américas' },
+  { name: 'Tulipa', origin: 'Europa e Ásia' },
+];
+
 // Rota para a rota raiz '/'
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.json(flowers); // Retorna os dados das flores como JSON
 });
 
 // Inicia o servidor na porta especificada ou na porta 3000
